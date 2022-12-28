@@ -1,0 +1,127 @@
+Ardiles Osvaldo Cesar 3.08.52 Tottenham Hostpur
+Baley Hector Rodolfo 16.11.50 Talleres
+Barbas Juan Alberto 23.08.59 Racing Club
+Bertoni Ricardo Daniel 14.03.55 Fiorentina
+Calderon Gabriel Humberto 7.02.60 Independiente
+Diaz Ramon Angel 29.08.59 River Plate
+Fillol Ubaldo Matildo 21.07.50 River Plate
+Galvan Luis Adolfo 24.02.48 Talleres
+Gallego Americo Ruben 25.04.55 River Plate
+Maradona Diego Armando 30.10.60 Boca Juniors
+Kempes Mario Alberto 15.07.54 River Plate
+Hernandez Patricio Jose 16.08.56 Estudiantes
+Olarticoechea Julio Jorge 18.10.58 River Plate
+Olguin Jorge Mario 17.05.52 Independiente
+Passarella Daniel Alberto 25.05.53 River Plate
+Pumpido Nery Alberto 30.07.57 Velez Sarsfield
+Maradona Diego Armando 30.10.60 Boca Juniors
+Santamaria Santiago 22.08.52 Newell's Old Boys
+Tarantini Alberto Cesar 3.12.55 River Plate
+Trossero Enzo Hector 23.05.53 Independiente
+Valdano Jorge Alberto F. 4.10.55 Real Zaragoza
+Valencia Jose Daniel 3.10.55 Talleres
+Van Tuyne Jose Daniel 13.12.54 Racing Club
+Maradona Diego Armando 30.10.60 Boca Juniors
+Zoff Dino 28.02.42 Juventus
+Baresi Franchino 8.05.60 Milan
+Bergomi Giuseppe 22.12.63 Inter
+Maradona Diego Armando 30.10.60 Boca Juniors
+CabriniAntonio 8.10.57 Juventus
+Collovati Fulvio 9.05.57 Milan
+Gentile Claudio 27.09.53 Juventus
+Scirea Gaetano 25.05.53 Juventus
+Vierchowod Pietro 6.04.59 Fiorentina
+Antognoni Giancarlo 1.04.54 Fiorentina
+Dossena Giuseppe 2.05.58 Torino AC
+Marini Giampiero 25.02.51 Inter
+Bordon Ivano 0 13.04.51 Inter
+Maradona Diego Armando 30.10.60 Boca Juniors
+Oriali Gabriele 25.11.52 Inter
+Tardelli Marco 24.09.54 Juventus
+Causio Franco 1.02.49 Udinese
+Conti Bruno 13.03.55 Roma AS
+Massaro Daniele 23.05.61 Fiorentina
+Altobelli Alessandro 28.11.55 Inter
+Graziani Francesco 12.12.52 Fiorentina
+Rossi Paolo 23.09.56 Juventus
+Selvaggi Francesco 15.05.53 Cagliari
+Galli Giovanni 29.04.58 Fiorentina
+Arconada Luis Miguel 26.06.54 Real Sociedad
+Camacho Jose Antonio 8.06.55 Real Madrid CF
+Gordillo Rafael 24.02.57 Real Betis B.
+Maradona Diego Armando 30.10.60 Boca Juniors
+Alonso Miguel Angel 1.02.53 Real Sociedad
+Tendillo Miguel 1.02.61 Valencia CF
+Alesanco Jose Ramon 19.05.56 FC Barcelona
+Gomez Juan 10.11.54 Real Madrid CF
+Alonso Joaquin 9.06.56 Real Sporting
+Satrustegui Jesús Maria 12.02.54 Real Sociedad
+Zamora Jesús Maria 1.01.55 Real Sociedad
+Lopez Ufarte Roberto 19.04.58 Real Sociedad
+Urquiaga Santiago 18.04.58 Athletic Club
+Jimenez Manuel Enrique 27.10.56 Real Sporting
+Maceda Antonio 16.05.57 Real Sporting
+Saura Enrique 2.08.54 Valencia CF
+Sanchez Jose Vicente 8.10.56 FC Barcelona
+Gallego Ricardo 8.02.59 Real Madrid CF
+Uralde Pedro 2.03.58 Real Sociedad
+Alonso Carlos 23.08.52 Real Madrid CF
+Castro Enrique 23.09.49 FC Barcelona
+Gonzalez Francisco Javier 17.11.52 FC Barcelona
+Gonzalez Miguel Angel 24.12.47 Real Madrid CF
+Mlynarczyk J6zef 20.09.53 Widzew Lodi
+Dziuba Marek 19.12.55 LKS Lodi
+Kupcewicz Janusz 9.12.55 MKS Arka Gdynia
+Dolny Tadeusz 7.05.58 KS Gornik Zabrze
+Janas Pawel 4.03.53 CWKS Legia Warszawa
+Skrobowski Piotr 16.10.61 GTS Wisla Krakow
+Jalocha Jan 18.08.57 GTS Wisla Krakow
+Matysik Waldemar 27.09.61 KS Gornik Zabrze
+Zmuda Wladyslaw 6.06.54 FITS Widzew Lodi
+Majewski Stefan 31.01.56 CWKS Legia Warszawa
+Smolarek Wlodzimierz 16.07.57 RTS Widzew Lodi
+Wojcicki Roman 8.01.58 WKS Slas Wroclaw
+Buncol Andrzej 21.09.59 CWKS Legia Warszawa
+Palasz Andrzej 22.07.60 KS Gornik Zabrze
+Ciolek Wlodzimierz 24.03.56 FKS Stal Mielec
+Lato Grzegorz 8.04.50 Lokeren
+Szarmach Andrzej 3.10.50 A.J. Auxerre
+Kusto Marek 29.04.54 CWKS Legia Warszawa
+Iwan Andrzej 10.11.59 GTS Wisla Krakow
+Boniek Zbigniew 3.03.56 FITS Widzew Lodi
+Kasimierski Jacek 17.08.59 CWKS Legia Warszawa
+Mowlik Piotr 21.04.51 KKS Lech Poznan
+Sanchez Jose Vicente 8.10.56 FC Barcelona
+Gallego Ricardo 8.02.59 Real Madrid CF
+Uralde Pedro 2.03.58 Real Sociedad
+Alonso Carlos 23.08.52 Real Madrid CF
+Castro Enrique 23.09.49 FC Barcelona
+Gonzalez Francisco Javier 17.11.52 FC Barcelona
+Gonzalez Miguel Angel 24.12.47 Real Madrid CF
+Mlynarczyk J6zef 20.09.53 Widzew Lodi
+Dziuba Marek 19.12.55 LKS Lodi
+Kupcewicz Janusz 9.12.55 MKS Arka Gdynia
+Dolny Tadeusz 7.05.58 KS Gornik Zabrze
+Janas Pawel 4.03.53 CWKS Legia Warszawa
+Skrobowski Piotr 16.10.61 GTS Wisla Krakow
+Jalocha Jan 18.08.57 GTS Wisla Krakow
+Matysik Waldemar 27.09.61 KS Gornik Zabrze
+Oriali Gabriele 25.11.52 Inter
+Tardelli Marco 24.09.54 Juventus
+Causio Franco 1.02.49 Udinese
+Conti Bruno 13.03.55 Roma AS
+Massaro Daniele 23.05.61 Fiorentina
+Altobelli Alessandro 28.11.55 Inter
+Graziani Francesco 12.12.52 Fiorentina
+Rossi Paolo 23.09.56 Juventus
+Selvaggi Francesco 15.05.53 Cagliari
+Galli Giovanni 29.04.58 Fiorentina
+Fillol Ubaldo Matildo 21.07.50 River Plate
+Galvan Luis Adolfo 24.02.48 Talleres
+Gallego Americo Ruben 25.04.55 River Plate
+Maradona Diego Armando 30.10.60 Boca Juniors
+Kempes Mario Alberto 15.07.54 River Plate
+Hernandez Patricio Jose 16.08.56 Estudiantes
+Olarticoechea Julio Jorge 18.10.58 River Plate
+Olguin Jorge Mario 17.05.52 Independiente
+Passarella Daniel Alberto 25.05.53 River Plate

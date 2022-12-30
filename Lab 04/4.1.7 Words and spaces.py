@@ -14,5 +14,6 @@ def main():
 
     print(*sorted(substrings, key=len), sep="\n")
 
+
 if __name__ == '__main__':
     main()

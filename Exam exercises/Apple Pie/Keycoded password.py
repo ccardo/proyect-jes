@@ -39,5 +39,6 @@ def main():
 
     print(decoded)
 
+
 if __name__ == '__main__':
     main()

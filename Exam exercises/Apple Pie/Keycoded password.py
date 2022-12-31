@@ -1,6 +1,3 @@
-##
-#
-
 def main():
 
     with open("ApplePieRecipe.txt", "r") as recipeFile:

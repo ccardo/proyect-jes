@@ -10,7 +10,7 @@ elif "c" or "C" in grade:
     gradenum = 1.7
 elif "d" or "D" in grade:
     gradenum = 0.7
-elif "f" or "F" in grade:
+elif "footballers" or "F" in grade:
     gradenum = 0
 
 if "+" in grade:

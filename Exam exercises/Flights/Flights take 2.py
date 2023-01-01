@@ -1,6 +1,8 @@
 
 def create_flight_list():
 
+    """returns a list of the flights"""
+
     with open("flights.txt", "r") as file:
 
         flightsList = [i.strip().split(",") for i in file.readlines()]
@@ -9,6 +11,9 @@ def create_flight_list():
 
 
 def search_direct_flights(flight_list, departure, arrival):
+
+    """prints a list of direct flights that correspond
+    to the given departure and arrival cities"""
 
     print("\nDirect flights:\n")
     for i in flight_list:
@@ -19,6 +24,12 @@ def search_direct_flights(flight_list, departure, arrival):
 
 
 def search_one_stop_flights(flight_list, departure, arrival):
+
+    """prints a list of flights that start at the departure city
+    and end at the arrival city, but have one stop in the middle:
+    The second flight has to:
+    - be within 24 hours of the first one
+    - be at least 30 minutes after the first one"""
 
     from itertools import filterfalse
     flight_list = list(filterfalse(lambda x: x[2] == departure and x[4] == arrival, flight_list))
@@ -45,6 +56,11 @@ def search_one_stop_flights(flight_list, departure, arrival):
 
 def calculate_time(time1, time2):
 
+    """calculates the time between two given hours:minutes
+    by transforming the hours and minutes in seconds and subtracting them
+
+    :returns tuple with difference hours and minutes"""
+
     time1List = time1.split(":")
     time2List = time2.split(":")
 
@@ -67,6 +83,7 @@ def main():
 
     search_direct_flights(allFlights, departure, arrival)
     search_one_stop_flights(allFlights, departure, arrival)
+
 
 if __name__ == '__main__':
     main()

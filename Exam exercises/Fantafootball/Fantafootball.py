@@ -3,6 +3,8 @@
 
 def get_players():
 
+    """returns a list of the players in the file"""
+
     from csv import reader
 
     playerList = list(reader(open("players.csv")))
@@ -14,6 +16,7 @@ def get_players():
 
 def main():
 
+    # "role": [number of players, budget in millions]
     roles = {
         "goalkeeper": [3, 20],
         "defender": [8, 40],
@@ -38,9 +41,12 @@ def main():
 
 def buy_player(role: str, budget: int, playerList: list[list[str]]):
 
-    playersRole = list(filter(lambda player: player[2] == role and budget > int(player[3]), playerList))
+    """skims the players to see the ones of the given role,
+    then removes the player from the dictionary if bought"""
+
+    players_of_that_role = list(filter(lambda player: player[2] == role and budget > int(player[3]), playerList))
     try:
-        boughtPlayer = playerList.index(max(playersRole, key=lambda i: int(i[3])))
+        boughtPlayer = playerList.index(max(players_of_that_role, key=lambda i: int(i[3])))
         return playerList.pop(boughtPlayer)
     except IndexError:
         return print("Not enough money! Sorry :(")

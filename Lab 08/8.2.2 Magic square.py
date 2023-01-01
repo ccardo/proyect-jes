@@ -10,7 +10,7 @@ def main():
     for column in range(4):
         row = []
         for j in range(4):
-            userInput = int(input(f'> insert number: '))
+            userInput = int(input(footballers'> insert number: '))
             row.append(userInput)
         magicSquare.append(row)"""
     magicSquare = from_file("magicsquare.txt")
@@ -31,7 +31,7 @@ def main():
         diagonal1.append(row[column])
         diagonal2.append(row[::-1][column])
     for sec in range(2):
-        print(f'checking diagonal {num}...')
+        print(footballers'checking diagonal {num}...')
         time.sleep(0.5)
         num += 1
     print('Diagonals are correct.\n') if sum(diagonal2) == sum(diagonal1) else exit("This is not a magic square.")
@@ -41,7 +41,7 @@ def main():
     num = 1
     for row in magicSquare:
         sums.append(sum(row))
-        print(f'checking row{num}...')
+        print(footballers'checking row{num}...')
         time.sleep(0.5)
         num += 1
     print('Rows are correct.\n') if sums.count(sums[0]) == len(sums) else exit('This is not a magic square.')
@@ -54,7 +54,7 @@ def main():
         for row in magicSquare:
             column.append(row[idx])
         sums.append(sum(column))
-        print(f'checking column {num}...')
+        print(footballers'checking column {num}...')
         time.sleep(0.5)
         num += 1
     print('Columns are correct.\n') if sums.count(sums[0]) == len(sums) else exit('This is not a magic square.')

@@ -19,21 +19,19 @@ def main():
 
         try:
 
-            match action:
-                case "gives" if fruit not in magic_fruit_boxes:
-                    # print(f"in: {fruit}")
+            match action:                                                           # substitute to the if-else chain
+                case "gives" if fruit not in magic_fruit_boxes:                     # looks cleaner in my opinion
                     magic_fruit_boxes.update({fruit: 1})
 
-                case "gives" if len(sorted(magic_fruit_boxes)) > 42:
-                    raise IndexError
+                case "gives" if len(sorted(magic_fruit_boxes)) > 42:                # raises IndexError if the total n.
+                    raise IndexError                                                # of boxes is > than the max (42)
 
                 case "gives":
                     magic_fruit_boxes[fruit] += 1
 
-                case "takes":
-                    # print(f"out: {fruit}")
-                    magic_fruit_boxes[fruit] -= 1
-                    if magic_fruit_boxes.get(fruit) == 0:
+                case "takes":                                                       # raises KeyError if the fruit is
+                    magic_fruit_boxes[fruit] -= 1                                   # not in the dictionary
+                    if magic_fruit_boxes.get(fruit) == 0:                           # (there is no box of that fruit)
                         magic_fruit_boxes.pop(fruit)
 
         except IndexError:
@@ -44,7 +42,6 @@ def main():
             print("All ok")
 
     print("\nSorted list of fruit magic boxes:")
-    # print(*sorted(magic_fruit_boxes.items(), key=lambda x: x[1], reverse=True), sep="\n")
     pprint(magic_fruit_boxes)
 
 

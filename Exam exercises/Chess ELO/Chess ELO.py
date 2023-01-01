@@ -17,7 +17,7 @@ def main():
 
     games = list(reader(open("games.csv")))[1:]
     for game in games:
-        game.extend(game.pop(2).split("-"))                                 # to split the score at the dash
+        game.extend(game.pop(2).split("-"))                                 # split the score at the dash
 
     for game in games:
 

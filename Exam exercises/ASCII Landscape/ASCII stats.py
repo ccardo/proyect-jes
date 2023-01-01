@@ -1,19 +1,10 @@
 ##
 #
 
-def get_size_picture(file):
-
-    try:
-        with open(file, "r") as infile:
-            lines = infile.readlines()
-            return len(lines), len(lines[0])
-    except IOError:
-        exit("No file was found. ")
-
-
 def main():
     coords, size = None, None
 
+    # lets user input correct values for the coordinates and the size of the square
     while not coords and not size:
         coords_input = input("input the desired coordinates (x,y):\n").split(",")
         size_input = input("input the size of the square to analyze:\n")
@@ -23,16 +14,19 @@ def main():
         except ValueError:
             print("\ncoords or size were of incorrect value. Try again:")
 
+    # open the file and read the sequence
     try:
         with open("landscape.txt", "r") as infile:
             lines = infile.readlines()
             total_size = len(lines), len(lines[0])
 
+            # checks if the coordinates are valid (x <= 401, y <= 76)
             if coords[0] + size <= total_size[1] and coords[1] + size <= total_size[0]:
-                analyzed = [row[coords[1]: coords[1] + size] for row in lines[coords[0]: coords[0] + size]]
+                analyzed = [row[coords[0]: coords[0] + size] for row in lines[coords[1]: coords[1] + size]]
             else:
                 exit("Size too big to fit into the picture.")
 
+            # creates a dictionary with every character and its usage count
             characters = dict()
             for line in analyzed:
                 for char in line:
@@ -42,7 +36,7 @@ def main():
                         characters[char] += 1
 
             for char in characters:
-                print(f"{char} --> {(characters[char] / size ** 2) * 100}%")
+                print(f"{char!r} --> {round((characters[char] / size ** 2) * 100, 3)}%")
 
     except IOError:
         exit("No file was found. ")

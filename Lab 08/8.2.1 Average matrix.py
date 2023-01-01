@@ -18,21 +18,11 @@ def main():
         averaged_row = []
         for j, num in enumerate(row):
 
-            start_i = i-1
-            end_i = i+1
+            start_i = i-1 if i != 0 else i
+            end_i = i+1 if i != len(matrix) else i
 
-            start_j = j-1
-            end_j = j+1
-
-            if i == 0:
-                start_i = i
-            if i == len(matrix)-1:
-                end_i = i
-
-            if j == 0:
-                start_j = j
-            if j == len(row)-1:
-                end_j = j
+            start_j = j-1 if j != 0 else j
+            end_j = j+1 if j != len(row) else j
 
             rowsNums = matrix[start_i:end_i+1]
             to_take_average = []
@@ -48,6 +38,7 @@ def main():
         averaged_matrix.append(averaged_row)
 
     print(*averaged_matrix, sep='\n')
+
 
 if __name__ == '__main__':
     main()

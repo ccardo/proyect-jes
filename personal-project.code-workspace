@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../personal-project"
+		},
+		{
+			"name": "proyect-jes",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"githubPullRequests.ignoredPullRequestBranches": [
+			"main"
+		]
+	}
+}

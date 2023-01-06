@@ -59,7 +59,7 @@ def calculate_time(time1, time2):
     """calculates the time between two given hours:minutes
     by transforming the hours and minutes in seconds and subtracting them
 
-    :returns tuple with difference hours and minutes"""
+    :returns: tuple with difference hours and minutes"""
 
     time1List = time1.split(":")
     time2List = time2.split(":")

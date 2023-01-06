@@ -11,11 +11,11 @@ def main():
 
         for j, height in enumerate(row):
 
-            start_i = i - 1 if i != 0 else i
-            end_i = i + 1 if i != len(mapArray) - 1 else i
+            start_i = i-1 if i != 0 else i
+            end_i = i+1 if i != len(mapArray) - 1 else i
 
-            start_j = j - 1 if j != 0 else j
-            end_j = j + 1 if j != len(row) - 1 else j
+            start_j = j-1 if j != 0 else j
+            end_j = j+1 if j != len(row) - 1 else j
 
             surroundings = [row[start_j: end_j + 1] for row in mapArray[start_i: end_i + 1]]
 

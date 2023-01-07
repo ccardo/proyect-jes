@@ -7,16 +7,10 @@ def main():
     file_path = file_path_input if file_path_input else file_path
 
     with open(file_path, "r") as file:
+        people = [line.strip().split(";") for line in file]
+        header = people[0][1:]
 
-        lines = [line.strip().split(";") for line in file]
-
-    # create a dictionary of dictionaries for storing the data of every character
-    characters = {}
-    for line in lines:
-
-        # characters[line[0]] = name of character
-        # dictionary comprehension = "feature name": feature value for every character
-        characters[line[0]] = {lines[0][i+1]: line[i+1] for i, _ in enumerate(lines[0][1:])}
+    characters = save_characters_data(people)
 
     # delete the header of the file after it is not needed
     del characters["Name"]
@@ -27,26 +21,46 @@ def main():
     with open(question_file_1) as file_input_1:
         questions1 = [line.strip().split(" = ") for line in file_input_1]
 
-    # temporary dictionary that will be modified, contains the characters matching the question
-    matching_characters = characters
+    # dictionary containing the characters matching the question
+    matching_characters = match_questions(characters, questions1)
 
-    for question in questions1:
+    # if there is only 1 person remaining at the end, you won; else, eat shit
+    print("\nYou WON!") if len(matching_characters) == 1 else print("\nYou LOST!")
+
+
+def save_characters_data(people_list: list):
+    header = people_list[0][1:]
+
+    # create a dictionary of dictionaries for storing the data of every character
+    characters = {}
+    for person in people_list:
+
+        # characters[person[0]] = name of character
+        # dictionary comprehension = "feature name": feature value for every character
+        person_info = person[1:]
+        characters[person[0]] = {header[i]: person_info[i] for i, _ in enumerate(header)}
+
+    return characters
+
+
+def match_questions(matching_characters: dict, questions: list) -> dict:
+
+    CHARACTERS = matching_characters
+    for question in questions:
 
         print()
         print(*question, sep=" --> ")
 
-        feature = question[0]
-        feature_value = question[1]
+        feature, feature_value = question
 
         # filter the matching people by the question
         matches = list(filter(lambda person: matching_characters[person][feature] == feature_value, matching_characters))
-        matching_characters = {person: characters[person] for person in matches}
+        matching_characters = {person: CHARACTERS[person] for person in matches}
 
         for person in matching_characters:
             print(f"{person}:", *matching_characters[person].values())
 
-    # if there is only 1 person remaining at the end, you won; else, eat shit
-    print("\nYou WON!") if len(matching_characters) == 1 else print("\nYou LOST!")
+    return matching_characters
 
 
 if __name__ == '__main__':

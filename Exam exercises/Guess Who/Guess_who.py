@@ -43,7 +43,7 @@ def main():
         matching_characters = {person: characters[person] for person in matches}
 
         for person in matching_characters:
-            print(f"{person}: {matching_characters[person]}")
+            print(f"{person}:", *matching_characters[person].values())
 
     # if there is only 1 person remaining at the end, you won; else, eat shit
     print("\nYou WON!") if len(matching_characters) == 1 else print("\nYou LOST!")

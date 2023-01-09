@@ -1,16 +1,12 @@
 ##
 #
-import os.path
-from inspect import getsourcefile
 from pprint import pprint
 from colorama import Fore, init
-init()
+init()  # initialize colorama
 
 def main():
-
-    file_path = os.path.abspath(getsourcefile(lambda:0))
-    print(file_path)
-    with open("/Users/riccardo/VSCode Projects/proyect-jes/Exam exercises/Magic fruit boxes/actions.txt", "r") as file:
+    
+    with open("actions.txt", "r") as file:
         lines = list(map(str.strip, file.readlines()))
 
     magic_fruit_boxes = {}

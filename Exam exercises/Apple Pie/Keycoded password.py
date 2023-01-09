@@ -1,6 +1,7 @@
 def main():
 
-    with open("ApplePieRecipe.txt", "r") as recipeFile:
+    filepath = "/Users/riccardo/VSCode Projects/proyect-jes/Exam exercises/Apple Pie/ApplePieRecipe.txt"
+    with open(filepath, "r") as recipeFile:
         recipeLines = [i.strip().split() for i in recipeFile.readlines()]
 
     # save all lines in the instructions part --> index of the liene > index of "Instructions"
@@ -9,7 +10,8 @@ def main():
         if i > recipeLines.index(["Instructions"]):
             importantLines.extend(line)
 
-    with open("keyCode.txt", "r") as keyCode:
+    filepath = "/Users/riccardo/VSCode Projects/proyect-jes/Exam exercises/Apple Pie/keyCode.txt"
+    with open(filepath, "r") as keyCode:
         keys = keyCode.readline().strip()
 
     for key in keys:

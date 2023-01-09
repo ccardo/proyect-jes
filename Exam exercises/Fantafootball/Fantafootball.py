@@ -28,9 +28,10 @@ def main():
     for role in roles:
 
         print(role, end=" --> ")
-        for i in range(roles[role][0], 0, -1):
 
-            budget = roles[role][1] - i
+        for i in range(roles[role][0] - 1, -1, -1):
+            budget = roles[role][1]
+            budget = budget - i
             boughtPlayer = buy_player(role, budget, players)
             roles.update({role: [roles[role][0], budget + i - int(boughtPlayer[3])]})
 
@@ -44,7 +45,7 @@ def buy_player(role: str, budget: int, playerList: list[list[str]]):
     """skims the players to see the ones of the given role,
     then removes the player from the dictionary if bought"""
 
-    players_of_that_role = list(filter(lambda player: player[2] == role and budget > int(player[3]), playerList))
+    players_of_that_role = list(filter(lambda player: player[2] == role and budget >= int(player[3]), playerList))
     try:
         boughtPlayer = playerList.index(max(players_of_that_role, key=lambda i: int(i[3])))
         return playerList.pop(boughtPlayer)

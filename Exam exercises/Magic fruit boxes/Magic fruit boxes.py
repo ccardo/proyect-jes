@@ -5,10 +5,14 @@ from colorama import Fore, init
 init()  # initialize colorama
 
 def main():
-    
-    with open("actions.txt", "r") as file:
-        lines = list(map(str.strip, file.readlines()))
 
+    try:
+        with open("/Users/riccardo/VSCode Projects/proyect-jes/Exam exercises/Magic fruit boxes/actions.txt", "r") as file:
+            lines = list(map(str.strip, file.readlines()))
+    except IOError:
+        exit("Error: no file with that name has been found.")
+
+    actions = []
     magic_fruit_boxes = {}
     for line in lines:
 
@@ -38,8 +42,9 @@ def main():
         except KeyError:
             print(f"{Fore.RED}Alice could not give a {fruit}: fruit not in stock{Fore.RESET}")
         else:
-            # print("All ok")
-            1
+            name = "Bob" if action == "gives" else "Carl"
+            actions.append(f"{name} {action} a {fruit}")
+    print(*actions, sep="\n")
 
     print("\nSorted list of fruit magic boxes:")
     pprint(magic_fruit_boxes)

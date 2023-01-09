@@ -46,10 +46,13 @@ def main():
             actions.append(f"{name} {action} a {fruit}")
     print(*actions, sep="\n")
 
+    if len(lines) == len(actions):
+        print("\nAll OK.")
+
     print("\nSorted list of fruit magic boxes:")
-    pprint(magic_fruit_boxes)
+    for fruit in sorted(magic_fruit_boxes, key=magic_fruit_boxes.get, reverse=True):
+        print(f"{fruit:<15}{magic_fruit_boxes[fruit]:>5}")
 
 
 if __name__ == '__main__':
     main()
-    

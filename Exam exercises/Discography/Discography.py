@@ -4,16 +4,16 @@
 def main():
 
     # opening the "artists.txt" file
-    filepath = "proyect-jes/Exam exercises/Discography/artists.txt"
+    filepath = "artists.txt"
     with open(filepath, "r") as artists_file:
         lines = [i.strip().split(";") for i in artists_file]
-        bands  = {line[0]: line[1] for line in lines}
+        bands = {line[0]: line[1] for line in lines}
     
     # saving the songs by the year of their release
     songs_by_year = dict()
     for band_code in bands:
 
-        band_songs = save_discography(f"proyect-jes/Exam exercises/Discography/{bands[band_code]}")
+        band_songs = save_discography(f"/Users/riccardo/Documents/GitHub/proyect-jes/Exam exercises/Discography/{bands[band_code]}")
         releases_of_that_year = set()
         bands[band_code] = releases_of_that_year
 

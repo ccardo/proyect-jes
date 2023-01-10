@@ -1,8 +1,8 @@
 ##
 #
-from pprint import pprint
 from colorama import Fore, init
 init()  # initialize colorama
+
 
 def main():
 

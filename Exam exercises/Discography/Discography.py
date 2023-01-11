@@ -13,7 +13,7 @@ def main():
     songs_by_year = dict()
     for band_code in bands:
 
-        band_songs = save_discography(f"/Users/riccardo/Documents/GitHub/proyect-jes/Exam exercises/Discography/{bands[band_code]}")
+        band_songs = save_discography(f"{bands[band_code]}")
         releases_of_that_year = set()
         bands[band_code] = releases_of_that_year
 
@@ -28,7 +28,7 @@ def main():
                 songs_by_year[year].add(song)
     
     # iterating over songs_by_year and printing all the songs with their band code
-    for year in songs_by_year:
+    for year in sorted(songs_by_year):
 
         print(f"\n{year}:")
         for song in songs_by_year[year]:

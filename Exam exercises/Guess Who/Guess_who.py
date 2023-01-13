@@ -29,6 +29,7 @@ def main():
 
 
 def save_characters_data(people_list: list):
+
     header = people_list[0][1:]
 
     # create a dictionary of dictionaries for storing the data of every character

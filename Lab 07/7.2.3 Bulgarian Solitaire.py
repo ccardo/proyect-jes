@@ -1,8 +1,10 @@
 ##
 #
 def main():
+
     import random as rd
     import time
+    
     deck, n = 45, 0                                             # 'deck' is the n. of starting cards
     cardPiles = []                                              # 'n' is the number of turns
 

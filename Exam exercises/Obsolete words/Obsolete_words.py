@@ -31,4 +31,6 @@ def main():
         for word in text:
             out_file.write(f"{word} ")
 
-main()
+
+if __name__ == "__main__":
+    main()

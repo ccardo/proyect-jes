@@ -1,5 +1,8 @@
 ##
 #
+import string
+from pprint import pprint
+
 
 def main():
 
@@ -7,30 +10,25 @@ def main():
     with open("obsolete.txt") as obsolete_file:
         lines = [i.split() for i in obsolete_file]
     
-    word_sub = {f" {line[0]}": line[1] for line in lines}
+    obsolete_words = {line[0]: line[1] for line in lines}
 
     with open("text.txt") as file_text:
-        text = file_text.readlines()
+        text = file_text.read().split()
 
-    sub_count = {}
-    for idx, line in enumerate(text):
-        for word in word_sub:
+    sub_count = {obs_word: 0 for obs_word in obsolete_words}
+    for obs_word in obsolete_words:
 
-            if word not in line:
-                continue
-            count = line.count(word)
+        for idx, word in enumerate(text):
 
-            if word not in sub_count:
-                sub_count.update({word: 1})
-            else:
-                sub_count[word] += count
-            text[idx] = line.replace(word, word_sub[word], count)
-    
-    print(sub_count)
-            
+            if obs_word == word.strip(string.punctuation):
+
+                text[idx] = obsolete_words[obs_word]
+                sub_count[obs_word] += 1
+
+    print("Obsolete word count:\n")
+    pprint(sub_count)
     with open("output.txt", "w") as out_file:
-        for line in text:
-            out_file.write(line)
-    
+        for word in text:
+            out_file.write(f"{word} ")
 
 main()

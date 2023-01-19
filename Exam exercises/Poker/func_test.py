@@ -3,11 +3,13 @@ from poker import hand_check, generate_deck
 import time
 #
 
-counter = 0
+royal_flush_counter = 0
+deck_counter = 0
 done = False
 while not done:
+# for deck_counter in range(10**5):
 
-    counter += 1
+    deck_counter += 1
     deck = generate_deck()
     #
     hands = []
@@ -20,12 +22,15 @@ while not done:
         if return_value == "Royal Flush":
             print(*hand, sep="\n")
             print("Royal Flush!!!!")
-            done =  True
+            print(f"Current deck count: {deck_counter}")
+            royal_flush_counter += 1
+            done = True
 
-for hand in hands:
+"""for hand in hands:
         print()
         for card in hand:
-            print(f"{card[0]} {card[1]}")
+            print(f"{card[0]} {card[1]}")"""
 
-print(f"Count of decks processed : {counter}")
+print(f"\nCounter of royal flushes: {royal_flush_counter}")
+print(f"Count of decks processed : {deck_counter}")
 print(f"Process time in seconds : {time.process_time()}")

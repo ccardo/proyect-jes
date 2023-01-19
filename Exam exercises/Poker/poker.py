@@ -33,9 +33,7 @@ def main():
         [output.write(f"{card[0]} {card[1]}\n") for card in deck]
     
     hands = []
-    for i, _ in enumerate(deck[:len(deck) - 2]):
-        if i % 5:
-            continue
+    for i in range(0, len(deck) - 2, 5):
         hands.append(deck[i: i+5])
 
     for hand in hands:

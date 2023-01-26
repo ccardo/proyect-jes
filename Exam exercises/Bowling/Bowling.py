@@ -7,7 +7,7 @@ def main():
     with open(file_path, "r") as file:
         lines = [line.strip().split(";") for line in file]
     
-    # saves the name and the list of scores into a dictonary
+    # saves the name and the list of scores into a dictionary
     scores = {" ".join(player[:2]): player[3:] for player in lines}
 
     # uses the return_score function to compute the total scores

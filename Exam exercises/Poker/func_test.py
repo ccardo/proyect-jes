@@ -7,7 +7,7 @@ royal_flush_counter = 0
 deck_counter = 0
 done = False
 while not done:
-# for deck_counter in range(10**5):
+    # for deck_counter in range(10**5):
 
     deck_counter += 1
     deck = generate_deck()

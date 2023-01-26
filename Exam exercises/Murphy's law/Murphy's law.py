@@ -19,7 +19,7 @@ def main():
         elif line is not header:
             murphy_laws[header] += f"{line} "
 
-    with open("topics.txt") as topics_file:
+    with open("topics.txt", "r", encoding="utf8") as topics_file:
         topics = [i.strip() for i in topics_file]
 
     laws = list()

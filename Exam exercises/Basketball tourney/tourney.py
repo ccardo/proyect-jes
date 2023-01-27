@@ -38,7 +38,6 @@ def main():
         # scores scored hahahaha
         teams_info[team_1][2] += score_1
         teams_info[team_2][2] += score_2
-        # kd ratio hahahhaa
 
     for team in teams_info:
 

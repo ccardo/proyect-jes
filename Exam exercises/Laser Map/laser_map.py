@@ -11,13 +11,16 @@ def main():
         for x, _ in enumerate(laser_map[y]):
             if laser_map[y][x] == "-":
                 continue
+
             if is_top(y, x, laser_map):
                 start_row, end_row, start_col, end_col = is_top(y, x, laser_map)
+
                 for i, row in enumerate(laser_map[start_row: end_row + 1]):
                     for j, _ in enumerate(row[start_col: end_col + 1]):
                         if i + start_row == y and j + start_col == x:
                             continue
                         laser_map[i + start_row][j + start_col] = "-"
+                        
     print(*laser_map, sep="\n")
             
 

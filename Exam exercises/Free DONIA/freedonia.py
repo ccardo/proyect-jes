@@ -28,7 +28,7 @@ def main():
             active_rules = active_rules.union(rules_added)
             active_rules = active_rules.difference(rules_removed)
 
-        print(f"\nActive on day {requested_date_str}:", *sorted(active_rules), sep="\n")
+        print(f"\nActive rules on day {requested_date_str}:", *sorted(active_rules), sep="\n")
 
 
 if __name__ == '__main__':

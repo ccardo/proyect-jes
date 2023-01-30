@@ -16,7 +16,7 @@ def main():
 
     # open the file and read the sequence
     try:
-        with open("landscape.txt", "r") as infile:
+        with open("landscape_1.txt", "r") as infile:
             lines = infile.readlines()
             total_size = len(lines), len(lines[0])
 

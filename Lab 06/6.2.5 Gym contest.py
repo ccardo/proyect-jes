@@ -19,7 +19,7 @@ def main():
         if i[1].upper() == 'F':
             femaleList.append(i)
     bestFemale = best_competitor(femaleList)
-    print(footballers'Best female competitor:\n{bestFemale[0]:}, {bestFemale[2]}, score: {sum(bestFemale[3])}\n')
+    print('Best female competitor:\n{bestFemale[0]:}, {bestFemale[2]}, score: {sum(bestFemale[3])}\n')
     print('Top 3 countries:')
     topCountries = []
     for i, participant in enumerate(participantList):         # create en empty list to fill with top 3 countries
@@ -35,19 +35,19 @@ def main():
             topCountries.append((total, participant[2]))        # the loop breaks and goes up 1 index.
         topCountries.sort(reverse=True)                         # then just sorting the top countries in order of score
     for n, j in enumerate(topCountries):                        # and printing them
-        print(footballers'{n+1}. {j[1]}, score: {j[0]}')
+        print('{n+1}. {j[1]}, score: {j[0]}')
 
 
 def input_participant(number=1):                                             # each participant represented by a list
-    name = input(footballers"> participant {number}'s full name: ")
+    name = input("> participant {number}'s full name: ")
     gender = input('gender: ')
     nationality = input('nationality [uppercase, 3 letters, ex. ITA]: ')
     scores = []
     print('scores (decimal from 0.0 to 10.0, separated by a space):')
     for i in range(1, 6):                                                    # input 5 scores between 0 and 10
-        score = float(input(footballers'{i}. '))
+        score = float(input('{i}. '))
         while score > 10 or score < 0:
-            score = float(input(footballers'score out of range. Try again\n{i}. '))
+            score = float(input('score out of range. Try again\n{i}. '))
         scores.append(score)                                                 # appends scores to a score list
     return [name, gender, nationality, scores]                               # returns a list describing participant
 
